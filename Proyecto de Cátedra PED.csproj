@@ -144,11 +144,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aulas.cs">
+    <Compile Include="FormAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aulas.Designer.cs">
-      <DependentUpon>Aulas.cs</DependentUpon>
+    <Compile Include="FormAlumnos.Designer.cs">
+      <DependentUpon>FormAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAulas.Designer.cs">
+      <DependentUpon>FormAulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocentes.Designer.cs">
+      <DependentUpon>FormDocentes.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -156,13 +168,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaterias.Designer.cs">
+      <DependentUpon>FormMaterias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNotas.Designer.cs">
+      <DependentUpon>FormNotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Aulas.resx">
-      <DependentUpon>Aulas.cs</DependentUpon>
+    <EmbeddedResource Include="FormAlumnos.resx">
+      <DependentUpon>FormAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAulas.resx">
+      <DependentUpon>FormAulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocentes.resx">
+      <DependentUpon>FormDocentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaterias.resx">
+      <DependentUpon>FormMaterias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNotas.resx">
+      <DependentUpon>FormNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -19,12 +19,13 @@ namespace Proyecto_de_Cátedra_PED
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            AbrirFormulario<FormMaterias>();
             indicator.Top = btnMaterias.Top + 10;
         }
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<FormAlumnos>();
             indicator.Top = btnAlumnos.Top + 10;
         }
 
@@ -35,20 +36,19 @@ namespace Proyecto_de_Cátedra_PED
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<FormDocentes>();
             indicator.Top = btnDocentes.Top + 10;
         }
 
         private void btnAulas_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Aulas>();
-
+            AbrirFormulario<FormAulas>();
             indicator.Top = btnAulas.Top + 10;
         }
 
         private void btnNotas_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<FormNotas>();
             indicator.Top = btnNotas.Top + 10;
         }
 

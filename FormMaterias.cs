@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_de_Cátedra_PED
 {
-    public partial class Aulas : Form
+    public partial class FormMaterias : Form
     {
-        public Aulas()
+        public FormMaterias()
         {
             InitializeComponent();
         }
