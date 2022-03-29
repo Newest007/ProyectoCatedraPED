@@ -35,12 +35,12 @@ namespace Proyecto_de_Cátedra_PED
             this.button1 = new System.Windows.Forms.Button();
             this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
             this.bunifuShapes1 = new Bunifu.UI.WinForms.BunifuShapes();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -63,12 +63,12 @@ namespace Proyecto_de_Cátedra_PED
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.bunifuPictureBox2);
             this.bunifuPanel1.Controls.Add(this.bunifuShapes2);
             this.bunifuPanel1.Controls.Add(this.txtContraseña);
             this.bunifuPanel1.Controls.Add(this.bunifuShapes1);
             this.bunifuPanel1.Controls.Add(this.txtUsuario);
             this.bunifuPanel1.Controls.Add(this.button1);
-            this.bunifuPanel1.Controls.Add(this.bunifuPictureBox1);
             this.bunifuPanel1.Controls.Add(this.label2);
             this.bunifuPanel1.Location = new System.Drawing.Point(80, 12);
             this.bunifuPanel1.Name = "bunifuPanel1";
@@ -121,22 +121,6 @@ namespace Proyecto_de_Cátedra_PED
             this.bunifuShapes1.Size = new System.Drawing.Size(311, 10);
             this.bunifuShapes1.TabIndex = 14;
             this.bunifuShapes1.Text = "bunifuShapes1";
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 36;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(182, 17);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(72, 72);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 12;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuImageButton1
             // 
@@ -199,6 +183,22 @@ namespace Proyecto_de_Cátedra_PED
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
             this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.AutoSizeHeight = true;
+            this.bunifuPictureBox2.BorderRadius = 49;
+            this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(157, 1);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(99, 99);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 21;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
@@ -216,7 +216,7 @@ namespace Proyecto_de_Cátedra_PED
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,12 +225,12 @@ namespace Proyecto_de_Cátedra_PED
 
         private System.Windows.Forms.Label label2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuShapes bunifuShapes2;
         private Bunifu.UI.WinForms.BunifuShapes bunifuShapes1;
         private System.Windows.Forms.Button button1;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
     }
 }

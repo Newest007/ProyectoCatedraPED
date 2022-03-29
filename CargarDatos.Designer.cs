@@ -31,8 +31,8 @@ namespace Proyecto_de_Cátedra_PED
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CargarDatos));
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
@@ -54,6 +54,18 @@ namespace Proyecto_de_Cátedra_PED
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(478, 74);
             this.bunifuPanel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(229)))));
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(60, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(366, 33);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Bienvenidos/as a nuestro programa!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuImageButton1
             // 
@@ -90,25 +102,13 @@ namespace Proyecto_de_Cátedra_PED
             this.bunifuImageButton1.ZoomSpeed = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(229)))));
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 33);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bienvenidos/as a nuestro programa!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(183, 181);
+            this.button1.Location = new System.Drawing.Point(187, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 41);
             this.button1.TabIndex = 9;
