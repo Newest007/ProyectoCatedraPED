@@ -144,6 +144,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CargarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarDatos.Designer.cs">
+      <DependentUpon>CargarDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMaterias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +194,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="CargarDatos.resx">
+      <DependentUpon>CargarDatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAlumnos.resx">
       <DependentUpon>FormAlumnos.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaterias.resx">
       <DependentUpon>FormMaterias.cs</DependentUpon>

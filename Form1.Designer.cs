@@ -29,13 +29,14 @@ namespace Proyecto_de_Cátedra_PED
         /// </summary>
         private void InitializeComponent()
         {
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
@@ -47,12 +48,13 @@ namespace Proyecto_de_Cátedra_PED
             this.btnAlumnos = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnMaterias = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnlAbrirForm = new System.Windows.Forms.Panel();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnlAbrirForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -66,12 +68,29 @@ namespace Proyecto_de_Cátedra_PED
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(732, 99);
             this.pnlHeader.TabIndex = 2;
+            this.pnlHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHeader_Paint);
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BorderRadius = 38;
+            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(54, 11);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(77, 77);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 0;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(142, 31);
+            this.label1.Location = new System.Drawing.Point(142, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(237, 33);
             this.label1.TabIndex = 1;
@@ -147,10 +166,12 @@ namespace Proyecto_de_Cátedra_PED
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.btnAlumnos);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnNotas);
             this.panel1.Controls.Add(this.btnAulas);
             this.panel1.Controls.Add(this.btnDocentes);
-            this.panel1.Controls.Add(this.btnAlumnos);
             this.panel1.Controls.Add(this.btnMaterias);
             this.panel1.Controls.Add(this.indicator);
             this.panel1.Controls.Add(this.bunifuShapes2);
@@ -179,11 +200,11 @@ namespace Proyecto_de_Cátedra_PED
             this.btnNotas.ColorContrastOnClick = 45;
             this.btnNotas.ColorContrastOnHover = 45;
             this.btnNotas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnNotas.CustomizableEdges = borderEdges11;
+            borderEdges16.BottomLeft = true;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = true;
+            borderEdges16.TopRight = true;
+            this.btnNotas.CustomizableEdges = borderEdges16;
             this.btnNotas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNotas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNotas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -269,11 +290,11 @@ namespace Proyecto_de_Cátedra_PED
             this.btnAulas.ColorContrastOnClick = 45;
             this.btnAulas.ColorContrastOnHover = 45;
             this.btnAulas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnAulas.CustomizableEdges = borderEdges12;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.btnAulas.CustomizableEdges = borderEdges17;
             this.btnAulas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAulas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAulas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -359,11 +380,11 @@ namespace Proyecto_de_Cátedra_PED
             this.btnDocentes.ColorContrastOnClick = 45;
             this.btnDocentes.ColorContrastOnHover = 45;
             this.btnDocentes.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btnDocentes.CustomizableEdges = borderEdges13;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.btnDocentes.CustomizableEdges = borderEdges18;
             this.btnDocentes.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDocentes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDocentes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -449,11 +470,11 @@ namespace Proyecto_de_Cátedra_PED
             this.btnAlumnos.ColorContrastOnClick = 45;
             this.btnAlumnos.ColorContrastOnHover = 45;
             this.btnAlumnos.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.btnAlumnos.CustomizableEdges = borderEdges14;
+            borderEdges19.BottomLeft = true;
+            borderEdges19.BottomRight = true;
+            borderEdges19.TopLeft = true;
+            borderEdges19.TopRight = true;
+            this.btnAlumnos.CustomizableEdges = borderEdges19;
             this.btnAlumnos.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAlumnos.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAlumnos.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -477,7 +498,7 @@ namespace Proyecto_de_Cátedra_PED
             this.btnAlumnos.IdleIconLeftImage = null;
             this.btnAlumnos.IdleIconRightImage = null;
             this.btnAlumnos.IndicateFocus = false;
-            this.btnAlumnos.Location = new System.Drawing.Point(19, 91);
+            this.btnAlumnos.Location = new System.Drawing.Point(19, 44);
             this.btnAlumnos.Name = "btnAlumnos";
             this.btnAlumnos.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAlumnos.OnDisabledState.BorderRadius = 1;
@@ -539,11 +560,11 @@ namespace Proyecto_de_Cátedra_PED
             this.btnMaterias.ColorContrastOnClick = 45;
             this.btnMaterias.ColorContrastOnHover = 45;
             this.btnMaterias.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.btnMaterias.CustomizableEdges = borderEdges15;
+            borderEdges20.BottomLeft = true;
+            borderEdges20.BottomRight = true;
+            borderEdges20.TopLeft = true;
+            borderEdges20.TopRight = true;
+            this.btnMaterias.CustomizableEdges = borderEdges20;
             this.btnMaterias.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnMaterias.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnMaterias.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -567,7 +588,7 @@ namespace Proyecto_de_Cátedra_PED
             this.btnMaterias.IdleIconLeftImage = null;
             this.btnMaterias.IdleIconRightImage = null;
             this.btnMaterias.IndicateFocus = false;
-            this.btnMaterias.Location = new System.Drawing.Point(19, 37);
+            this.btnMaterias.Location = new System.Drawing.Point(19, 91);
             this.btnMaterias.Name = "btnMaterias";
             this.btnMaterias.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnMaterias.OnDisabledState.BorderRadius = 1;
@@ -618,22 +639,7 @@ namespace Proyecto_de_Cátedra_PED
             this.pnlAbrirForm.Name = "pnlAbrirForm";
             this.pnlAbrirForm.Size = new System.Drawing.Size(532, 384);
             this.pnlAbrirForm.TabIndex = 8;
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 38;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(54, 11);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(77, 77);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 0;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pnlAbrirForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAbrirForm_Paint);
             // 
             // label2
             // 
@@ -641,9 +647,31 @@ namespace Proyecto_de_Cátedra_PED
             this.label2.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(144, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 33);
+            this.label2.Size = new System.Drawing.Size(258, 33);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Bienvenidos al programa!!";
+            this.label2.Text = "Bienvenido al programa!!";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(27, 301);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 26);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Usuario Logeado:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(64, 327);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(24, 26);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "#";
             // 
             // Form1
             // 
@@ -659,10 +687,11 @@ namespace Proyecto_de_Cátedra_PED
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnlAbrirForm.ResumeLayout(false);
             this.pnlAbrirForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -678,11 +707,13 @@ namespace Proyecto_de_Cátedra_PED
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnNotas;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAulas;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDocentes;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAlumnos;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMaterias;
         private System.Windows.Forms.Panel pnlAbrirForm;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAlumnos;
     }
 }
 

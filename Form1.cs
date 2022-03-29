@@ -12,6 +12,9 @@ namespace Proyecto_de_Cátedra_PED
 {
     public partial class Form1 : Form
     {
+
+        public String usuarioActivo;
+
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +34,7 @@ namespace Proyecto_de_Cátedra_PED
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
@@ -76,6 +79,16 @@ namespace Proyecto_de_Cátedra_PED
 
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sea bienvenido al programa " + usuarioActivo + "!","Hola!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void pnlAbrirForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlHeader_Paint(object sender, PaintEventArgs e)
         {
 
         }
