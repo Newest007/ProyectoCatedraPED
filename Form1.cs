@@ -41,6 +41,7 @@ namespace Proyecto_de_Cátedra_PED
 
         private void btnAulas_Click(object sender, EventArgs e)
         {
+            AbrirFormulario<Aulas>();
 
             indicator.Top = btnAulas.Top + 10;
         }
@@ -49,6 +50,34 @@ namespace Proyecto_de_Cátedra_PED
         {
 
             indicator.Top = btnNotas.Top + 10;
+        }
+
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = pnlAbrirForm.Controls.OfType<MiForm>().FirstOrDefault();
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                pnlAbrirForm.Controls.Add(formulario);
+                pnlAbrirForm.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+
+            }
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
