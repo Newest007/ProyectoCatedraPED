@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_de_Cátedra_PED
 {
-    partial class Aulas
+    partial class FormMaterias
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Proyecto_de_Cátedra_PED
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aulas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMaterias));
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.SuspendLayout();
             // 
@@ -37,26 +37,27 @@ namespace Proyecto_de_Cátedra_PED
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(365, 49);
+            this.bunifuLabel1.Location = new System.Drawing.Point(161, 65);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(69, 15);
+            this.bunifuLabel1.Size = new System.Drawing.Size(76, 15);
             this.bunifuLabel1.TabIndex = 0;
-            this.bunifuLabel1.Text = "bunifuLabel1";
+            this.bunifuLabel1.Text = "Form Materias";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // Aulas
+            // FormMaterias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 350);
+            this.ClientSize = new System.Drawing.Size(527, 339);
             this.Controls.Add(this.bunifuLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Aulas";
-            this.Text = "Aulas";
+            this.Name = "FormMaterias";
+            this.Text = "Materias";
             this.ResumeLayout(false);
             this.PerformLayout();
 
