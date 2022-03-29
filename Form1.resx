@@ -1517,6 +1517,15 @@
         RK5CYII=
 </value>
   </data>
+  <data name="btnAlumnos.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHAAAAApCAYAAADtYa10AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dGxDYAwEARBSvv+W3AZLgBwimhgpA0muQv3
+        mpn1ukNaJ+DfEUQBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXE
+        FRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEnYD7O0Yx+wEzvVOCr0vxHgAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
   <data name="btnNotas.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHAAAAApCAYAAADtYa10AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -1536,15 +1545,6 @@
 </value>
   </data>
   <data name="btnDocentes.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHAAAAApCAYAAADtYa10AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dGxDYAwEARBSvv+W3AZLgBwimhgpA0muQv3
-        mpn1ukNaJ+DfEUQBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXE
-        FRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEFRBXQFwBcQXEnYD7O0Yx+wEzvVOCr0vxHgAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <data name="btnAlumnos.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHAAAAApCAYAAADtYa10AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dGxDYAwEARBSvv+W3AZLgBwimhgpA0muQv3

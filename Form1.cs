@@ -92,5 +92,12 @@ namespace Proyecto_de_Cátedra_PED
         {
 
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormLogin login = new FormLogin();
+            login.Show();
+        }
     }
 }
